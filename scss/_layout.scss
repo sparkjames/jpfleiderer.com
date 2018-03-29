@@ -1,0 +1,11 @@
+body {
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: $container;
+	width: 100%;
+	padding-left: $padding;
+	padding-right: $padding;
+	margin: 0 auto;
+}
