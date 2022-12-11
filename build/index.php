@@ -158,7 +158,7 @@
 				<div class="resume__column resume__column--right">
 					<section id="education">
 						<h2 class="reume__heading">Education</h2>
-						<p>Bachelor of Digital Media – Interactive Systems, 2009<br>
+						<p>Bachelor of Digital Media &mdash; Interactive Systems, 2009<br>
 							University of Central Florida</p>
 					</section>
 
@@ -236,7 +236,7 @@
 							<li class="list-item">Created websites with WordPress API or a custom PHP/mySQL CMS.</li>
 							<li class="list-item">All websites created with PHP, HTML, CSS, and Javascript/jQuery.</li>
 							<li class="list-item">Designed websites in Photoshop and Illustrator.</li>
-							<li class="list-item">A variety of design work – from full websites to Facebook covers.</li>
+							<li class="list-item">A variety of design work &mdash; from full websites to Facebook covers.</li>
 						</ul> -->
 
 						<p><strong>Planet Digital, PHP Developer</strong> <em>(2010)</em></p>
