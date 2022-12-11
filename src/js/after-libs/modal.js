@@ -6,8 +6,8 @@ var show_modal = function(e){
         var modal = document.getElementById('modal');
             // console.log(modal);
 
-        if( !jpHasClass(modal, 'is-active') ){
-            jpAddClass(modal, 'is-active');
+        if( !modal.classList.contains('is-active') ){
+            modal.classList.add('is-active');
         }
 
         var modal_image = document.getElementById('modal-image');

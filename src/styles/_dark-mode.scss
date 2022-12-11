@@ -1,0 +1,52 @@
+body.dark-mode {
+  background-color: $bg-body-dark-mode;
+  color: $text-dark-mode;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $heading-dark-mode;
+  }
+
+  .header {
+    background-color: $bg-dark-mode;
+  }
+
+  .sidebar {
+    background-color: $bg-dark-mode;
+  }
+
+  a {
+    color: $primary;
+
+    &:visited {
+      color: $primary;
+    }
+
+    &:hover {
+      color: $hover;
+    }
+  }
+
+  .icon__awards {
+    &::after {
+        background-image: url('../images/icon-awards--dark-mode.svg');
+    }
+  }
+
+  .icon__email:before {
+    color: #000;
+  }
+
+  .color-scheme-label--light-mode {
+      display: none;
+  }
+
+  .color-scheme-label--dark-mode {
+    display: inline-block;
+  }
+  
+}

@@ -1,0 +1,39 @@
+@media print {
+
+	body {
+		font-size: 12px;
+	}
+
+	#header {
+		margin-bottom: 1.2em;
+	}
+
+	#find-me {
+		order: -1;
+	}
+
+	h1 {
+		font-size: 2.2rem
+	}
+
+	#logo {
+		float: left;
+    	margin-right: 16px;
+		max-width: 40px;
+	}
+
+	// .sidebar__section,
+	// .list--experience,
+	#awards {
+		page-break-inside: avoid;
+	}
+
+	.list-title {
+		page-break-after: avoid;
+	}
+
+	.list--experience {
+		page-break-before: avoid;
+	}
+
+}

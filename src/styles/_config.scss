@@ -1,20 +1,32 @@
 // Sizes
-$base-font-size: 16px;
+$base-font-size: 10px;
+$body-font-size: 1.6rem;
 $ratio: 1.414;
 $container: 1200px;
 $padding: 1.4em;
 
+
 // Colors
 $primary: #ff8400;
 $bg: #f0f2f4;
+$bg-body: #fff;
+$bg-dark-mode: #444;
+$bg-body-dark-mode: #2a2a2a;
 $subtitle: #a6a8aa;
 $text: #333;
+$text-dark-mode: #fafafa;
 $bg-menu: $text;
+$heading: #000;
+$heading-dark-mode: #fff;
 
-$hover: #f0f;
+$hover: #dd6200;
 
 $breakpoint-tablet: 840px;
 $breakpoint-mobile: 567px;
+
+
+// Fonts
+$font-sans: 'Montserrat', arial, sans-serif;
 
 
 

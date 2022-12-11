@@ -1,0 +1,198 @@
+.content__inner {
+    // @extend .container;
+}
+
+
+.controls {
+    padding-bottom: $padding;
+    padding-top: $padding;
+}
+
+.controls__color-scheme {
+    
+}
+
+.color-scheme-label {
+    
+}
+
+.color-scheme-label--light-mode {
+    display: inline-block;
+}
+
+.color-scheme-label--dark-mode {
+    display: none;
+}
+
+
+.resume__table {
+    display: grid;
+    grid-template-columns: 36% 64%;
+    grid-gap: 32px;
+
+    @media screen and (max-width: $breakpoint-tablet){
+        display: block;
+    }
+}
+
+.resume__column {
+    padding: $padding;
+
+    &--right {
+        // flex-basis: 64%;
+    }
+
+}
+
+.sidebar {
+    background-color: $bg;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__section {
+    margin-bottom: $padding;
+
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+.list-title {
+    margin-bottom: .66em;
+}
+
+.list {
+    list-style: disc;
+}
+
+.list-item {
+    margin-left: $padding;
+
+    + .list-item {
+        padding-top: calc($padding / 4);
+    }
+}
+
+.list--columns {
+    columns: 2;
+
+    @media screen and (max-width: $breakpoint-mobile){
+        columns: 1;
+        list-style: disc;
+
+        li {
+            margin-left: 1em;
+        }
+    }
+}
+
+.list--awards,
+.list--experience {
+    margin-bottom: $padding;
+}
+
+
+
+.a-wild-table-appears {
+
+    td {
+        width: 50%;
+
+        &:first-child {
+            font-weight: bold;
+        }
+
+        &:nth-child(2) {
+            padding-left: 1em;
+        }
+    }
+
+    tr + tr td {
+        padding-top: calc($padding / 4);
+    }
+
+    @media screen and (min-width:$breakpoint-tablet) and (max-width:960px){
+        display: block;
+
+        tr,
+        td {
+            display: block;
+            width: 100%;
+        }
+
+        td:nth-child(2) {
+            padding-top: 0;
+        }
+    }
+
+}
+
+
+
+
+.list__find {
+    list-style: none;
+
+    > li {
+        margin-left: 0;
+    }
+}
+
+.icon {
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.icon__awards {
+    align-items: center;
+    display: flex;
+    position: relative;
+    width: 100%;
+
+    // &::before {
+    //     background-color: #fff;
+    //     content: '';
+    //     display: block;
+    //     width: 20px;
+    //     height: 20px;
+    //     border-radius: 50%;
+    //     position: absolute;
+    //     left: 5.35em;
+    //     top: 0.25em;
+    //     z-index: 1;
+    // }
+
+    &::after {
+        background-image: url('../images/icon-awards.svg');
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: '';
+        display: inline-block;
+        height: 46px;
+        margin-left: .25em;
+        // position: relative;
+        vertical-align: middle;
+        width: 36px;
+        // z-index: 2;
+    }
+}
+
+.icon__email::before {
+    color: $text;
+    content: '@';
+    font-weight: bold;
+}
+
+.icon__github {
+    vertical-align: middle;
+}
+
+.icon__codepen {
+    vertical-align: text-bottom;
+}
