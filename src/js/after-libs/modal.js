@@ -16,7 +16,9 @@ var show_modal = function(e){
             // console.log(image_src);
         modal_image.src = image_src;
     }
-    catch(error){}
+    catch(error){
+        console.log( 'Error showing modal: ', error );
+    }
 }
 
 
@@ -30,4 +32,6 @@ try {
     }
 
 }
-catch(error){}
+catch(error){
+    console.log( 'Error setting modal link click: ', error );
+}

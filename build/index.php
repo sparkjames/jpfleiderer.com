@@ -10,7 +10,11 @@
 
 	<title>James Pfleiderer - Senior Web Developer</title>
 
-	<link rel='stylesheet' href='assets/styles/style.css?ver=20221209' type='text/css' media='all'>
+	<noscript>
+		<link rel='stylesheet' href='assets/styles/style.css?ver=20221209' type='text/css' media='all'>
+	</noscript>
+	<link rel='stylesheet' href='assets/styles/style.css?ver=20221209' type='text/css' media='print' onload="this.media='all'; this.onload=null;">
+
 
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-26496563-1"></script>
@@ -31,7 +35,7 @@
 
 
 	<header class="header">
-		<div class="header__inner container">
+		<div class="header-inner container">
 
 			<div class="logo">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -40,26 +44,26 @@
 				</svg>
 			</div>
 
-			<h1 class="header__primary-heading">James Pfleiderer <span class="header__sub-heading">Senior Web Developer</span></h1>
+			<h1 class="primary-heading">James Pfleiderer <span class="sub-heading">Senior Web Developer</span></h1>
 
 		</div>
 	</header>
 
-	<div class="content__outer">
-		<div class="content__inner container">
+	<div class="content-outer">
+		<div class="content-inner container">
 
 			<div class="controls">
-				<button class="controls__color-scheme" type="button">
+				<button class="controls-color-scheme" type="button">
 					<span class="color-scheme-label color-scheme-label--light-mode">Toggle Dark Mode</span>
 					<span class="color-scheme-label color-scheme-label--dark-mode">Toggle Light Mode</span>
 				</button>
 			</div>
 
-			<div class="resume__table">
+			<div class="resume-table">
 
-				<aside class="resume__column sidebar">
-					<section class="sidebar__section">
-						<h2 class="sidebar__heading">&lt;Greetings&gt;</h2>
+				<aside class="resume-column sidebar">
+					<section class="sidebar-section">
+						<h2 class="sidebar-heading">&lt;Greetings&gt;</h2>
 						<p>Hi, I'm James! I've been tinkering on the web for as long as I can remember. I'm a
 							self-starting, driven senior web developer who works well indedpendently but also enjoys
 							leading and participating in teams.</p>
@@ -72,8 +76,8 @@
 
 					</section>
 
-					<section class="sidebar__section" id="skills">
-						<h2 class="sidebar__heading">Skills</h2>
+					<section class="sidebar-section" id="skills">
+						<h2 class="sidebar-heading">Skills</h2>
 						<ul class="list list--columns">
 							<li class="list-item">WordPress API</li>
 							<li class="list-item">PHP</li>
@@ -99,8 +103,8 @@
 						</ul>
 					</section>
 
-					<section class="sidebar__section">
-						<h2 class="sidebar__heading">Fun Facts</h2>
+					<section class="sidebar-section">
+						<h2 class="sidebar-heading">Fun Facts</h2>
 						<table class="a-wild-table-appears">
 							<tr>
 								<td>Favorite Color:</td>
@@ -125,28 +129,28 @@
 						</table>
 					</section>
 
-					<section class="sidebar__section" id="find-me">
-						<h2 class="sidebar__heading">Find Me</h2>
-						<ul class="list list__find">
+					<section class="sidebar-section" id="find-me">
+						<h2 class="sidebar-heading">Find Me</h2>
+						<ul class="list list--find">
 							<li class="list-item">
-								<i class="icon icon__home"><img src="assets/images/icon-home.svg" height="16" width="16" alt="Home icon"></i>
+								<i class="icon icon--home"><img src="assets/images/icon-home.svg" height="16" width="16" alt="Home icon"></i>
 								Washington, DC
 							</li>
 							<li class="list-item">
 								<a href="http://github.com/sparkjames">
-									<i class="icon icon__github"><img src="assets/images/icon-github.svg" height="16" width="16" alt="Github icon"></i>
+									<i class="icon icon--github"><img src="assets/images/icon-github.svg" height="16" width="16" alt="Github icon"></i>
 									github.com/sparkjames
 								</a>
 							</li>
 							<li class="list-item">
 								<a href="https://codepen.io/sparkjames/">
-									<i class="icon icon__codepen"><img src="assets/images/icon-codepen.svg" height="16" width="16" alt="Codepen icon"></i>
+									<i class="icon icon--codepen"><img src="assets/images/icon-codepen.svg" height="16" width="16" alt="Codepen icon"></i>
 									codepen.io/sparkjames
 								</a>
 							</li>
 							<li class="list-item">
 								<a href="mailto:jpfleiderer@gmail.com">
-									<i class="icon icon__email"></i>
+									<i class="icon icon--email"></i>
 									jpfleiderer@gmail.com
 								</a>
 							</li>
@@ -155,22 +159,30 @@
 
 				</aside>
 
-				<div class="resume__column resume__column--right">
-					<section id="education">
-						<h2 class="reume__heading">Education</h2>
+				<div class="resume-column resume-column--right">
+
+					<section id="education" class="resume-section">
+						<h2 class="resume-heading">Education</h2>
 						<p>Bachelor of Digital Media &mdash; Interactive Systems, 2009<br>
 							University of Central Florida</p>
 					</section>
 
-					<section id="experience">
-						<h2 class="reume__heading">Experience</h2>
+					<section id="experience" class="resume-section">
+						<h2 class="resume-heading">Experience</h2>
 
 						<p class="list-title">
 							<strong>Edelman, Senior WordPress Developer</strong>
 							<em>(2021 - 2022)</em>
 						</p>
 						<ul class="list list--experience">
-							<!-- <li class="list-item">Provided expertise and led other developers (both in-house and external) on WordPress projects.</li> -->
+							<li class="list-item">Prepared and mapped out site features and architecture based on client needs.</li>
+							<li class="list-item">Implemented custom WordPress boilerplate to from which we began all WordPress projects, using Parcel for ease of use by other developers.</li>
+							<li class="list-item">Built WordPress sites from scratch as a solo developer and as a team, using Sketch and Figma designs from in-house designers.</li>
+							<li class="list-item">Built WordPress themes and plugins to connect with different APIs from weather and stock prices to custom content APIs provided by the client.</li>
+							<li class="list-item">Built custom API for WordPress to serve content to third party websites.</li>
+							<li class="list-item">Provided expertise and guidance for other in-house developers on WordPress projects.</li>
+							<li class="list-item">Extensive work with PHP, HTML, SCSS, Javascript, Gulp, and Parcel.</li>
+							<li class="list-item">All sites responsive and cross-browser compatible.</li>
 						</ul>
 
 						<p class="list-title">
@@ -178,20 +190,13 @@
 							<em>(2018 - 2021)</em>
 						</p>
 						<ul class="list list--experience">
-							<li class="list-item">In charge of WordPress operations which involved managing other developers and planning
-								sprint/task lists.</li>
-							<li class="list-item">Provided expertise and led other developers (both in-house and external) on WordPress
-								projects.</li>
-							<li class="list-item">Created WordPress sites, as a solo developer and as a team, from in-house Photoshop and
-								XD designs.</li>
-							<li class="list-item">Planned and managed site functionality and architecture as projects moved from sales, to
-								planning, to the design process.</li>
-							<li class="list-item">Created "scope of work" and "build specification" documents to help define our projects'
-								development deliverables and timelines.</li>
-							<li class="list-item">Implemented custom WordPress boilerplate to from which we began all WordPress projects.
-							</li>
-							<li class="list-item">Built WordPress plugins to connect with the APIs like HubSpot, Google Maps, and
-								Dribbble.</li>
+							<li class="list-item">In charge of WordPress operations which involved managing other developers and planning sprint/task lists.</li>
+							<li class="list-item">Provided expertise and led other developers (both in-house and external) on WordPress projects.</li>
+							<li class="list-item">Created WordPress sites, as a solo developer and as a team, from in-house Photoshop and XD designs.</li>
+							<li class="list-item">Planned and managed site functionality and architecture as projects moved from sales, to planning, to the design process.</li>
+							<li class="list-item">Created "scope of work" and "build specification" documents to help define our projects' development deliverables and timelines.</li>
+							<li class="list-item">Implemented custom WordPress boilerplate to from which we began all WordPress projects.</li>
+							<li class="list-item">Built WordPress plugins to connect with APIs like HubSpot, Google Maps, and Dribbble.</li>
 							<li class="list-item">Extensive work with PHP, HTML, SCSS, Javascript, Twig, and Gulp.</li>
 							<li class="list-item">All sites responsive and cross-browser compatible.</li>
 						</ul>
@@ -246,61 +251,71 @@
 
 					</section>
 
-					<section id="recent">
-						<h2 class="reume__heading">Recent Websites</h2>
+					<section id="recent" class="resume-section">
+						<h2 class="resume-heading">Recent Websites</h2>
 
-						<ul class="recent-list">
+						<ul class="list list--recent">
 
 							<li class="list-item">
-								<strong><a href="https://www.rootsandshoots.org/">Jane Goodall - Roots and
-										Shoots</a></strong>, <em>(2019 / in progress)</em>
-								<p>It's BuddyPress with a many custom additions, including how users create their own
-									content and a map of all of their projects grouped by ZIP or city.</p>
+								<strong><a href="https://beinillinois.org/" rel="nofollow noopener">Be In Illinois</a></strong>, <em>(2022)</em>
+								<p>Using a custom method for WP to seperately queue critical and non-critical CSS, this website is build to load fast even with the high-res images at the top. Modular page sections and Advanced Custom Fields make it easy to add new pages.</p>
 							</li>
 
 							<li class="list-item">
-								<strong><a href="https://hstreet.org/">H Street Main Street</a></strong>,
+								<strong><a href="https://www.preludecapital.com/" rel="nofollow noopener">Prelude Capital</a></strong>, <em>(2021)</em>
+								<p>Page speed was a big emphasis for this project, <a href="#modal" class="modal-link" data-screenshot="assets/images/2022-12-12_prelude-audit.png">we achieved a 97 for performance</a> despite the videos and high res images on the home page. This site will also feature multiple languages using the Polylang plugin.</p>
+							</li>
+
+							<li class="list-item">
+								<strong><a href="https://www.protectedincome.org/" rel="nofollow noopener">Protected Lifetime Income</a></strong>, <em>(2021)</em>
+								<p>This site features many custom page sections built with Advanced Custom Fields. Lazy loading is used througout to improve loading times. The hero and video sliders are built with custom controllers in ES6 Javascript.</p>
+							</li>
+
+							<li class="list-item">
+								<strong><a href="https://www.rootsandshoots.org/" rel="nofollow noopener">Jane Goodall - Roots and Shoots</a></strong>, <em>(2019)</em>
+								<p>It's BuddyPress with a many custom additions, including how users create their own content and a map of all of their projects grouped by ZIP or city.</p>
+							</li>
+
+							<!-- <li class="list-item">
+								<strong><a href="https://hstreet.org/" rel="nofollow noopener">H Street Main Street</a></strong>,
 								<em>(2018)</em>
 								<p>There are many page speed optimizations on this site, like lazy loading, image
 									compression, and reducing render-blocking stylesheets and scripts. The client is
 									able to add information for local businesses which are then automatically
 									categorized and mapped to the different sections.</p>
-							</li>
+							</li> -->
 
 							<li class="list-item">
-								<strong><a href="https://www.taoti.com/">Taoti Creative</a></strong>, <em>(2018)</em>
+								<strong><a href="https://www.taoti.com/" rel="nofollow noopener">Taoti Creative</a></strong>, <em>(2018)</em>
 								<p>In addition to page speed optimizations, there are some neat front-end features here
 									like the 90&deg; main nav and images that are positioned/sized with linear
 									equations.</p>
 							</li>
 
-							<li class="list-item">
-								<strong><a href="https://www.knucklepuckmedia.com/">Knucklepuck</a></strong>,
+							<!-- <li class="list-item">
+								<strong><a href="https://www.knucklepuckmedia.com/" rel="nofollow noopener">Knucklepuck</a></strong>,
 								<em>(2018)</em>
 								<p>This is built with a custom, modular WordPress theme. I managed to achieve a <a href="#modal" class="modal-link" data-screenshot="assets/images/2018-03-15_kp-audit.png">95 score on the
 										Lighthouse performance audit</a> by coding a way for WP to queue critical CSS
 									separate from non-critical CSS.</p>
-							</li>
+							</li> -->
 
-							<li class="list-item">
-								<strong><a href="https://www.danielmrosenberg.com/">Daniel M. Rosenberg</a></strong>,
+							<!-- <li class="list-item">
+								<strong><a href="https://www.danielmrosenberg.com/" rel="nofollow noopener">Daniel M. Rosenberg</a></strong>,
 								<em>(2017)</em><br>
-								<strong><a href="https://cbcsettlementfunding.com/">CBC Settlement Funding</a></strong>,
+								<strong><a href="https://cbcsettlementfunding.com/" rel="nofollow noopener">CBC Settlement Funding</a></strong>,
 								<em>(2017)</em>
 								<p>Both of these are great examples of a modular WordPress theme. They are built on my
 									extentible system where custom content modules can be added in for whatever the
 									website's needs are.</p>
-							</li>
-
-							<li class="list-item">
-							</li>
+							</li> -->
 
 						</ul><!-- END .recent-list -->
 
 					</section><!-- END #recent -->
 
-					<section id="awards">
-						<h2 class="icon icon__awards reume__heading">Awards</h2>
+					<section id="awards" class="resume-section">
+						<h2 class="icon icon--awards resume-heading">Awards</h2>
 
 						<p class="list-title"><strong>Communicator Awards</strong></p>
 						<ul class="list list--columns list--awards">
@@ -324,10 +339,10 @@
 
 				</div>
 
-			</div><!-- END .resume__table -->
+			</div><!-- END .resume-table -->
 
-		</div><!-- END .content__inner -->
-	</div><!-- END .wrapper__outer -->
+		</div><!-- END .content-inner -->
+	</div><!-- END .content-outer -->
 
 	<div id="modal">
 		<a id="modal-inner" href="#0">

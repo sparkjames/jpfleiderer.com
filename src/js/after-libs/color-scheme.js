@@ -6,7 +6,7 @@ if( window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 
 
 // Let the button toggle the dark-mode class on and off of the <body> element.
-const color_scheme_toggle = document.querySelector('.controls__color-scheme');
+const color_scheme_toggle = document.querySelector('.controls-color-scheme');
 color_scheme_toggle.addEventListener( 'click', color_scheme_toggle_onClick );
 
 function color_scheme_toggle_onClick(e){

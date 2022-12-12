@@ -1,6 +1,6 @@
-.content__inner {
-    // @extend .container;
-}
+// .content-inner {
+
+// }
 
 
 .controls {
@@ -8,7 +8,7 @@
     padding-top: $padding;
 }
 
-.controls__color-scheme {
+.controls-color-scheme {
     
 }
 
@@ -25,7 +25,15 @@
 }
 
 
-.resume__table {
+.resume-section {
+
+    + .resume-section {
+        margin-top: 2rem;
+    }
+}
+
+
+.resume-table {
     display: grid;
     grid-template-columns: 36% 64%;
     grid-gap: 32px;
@@ -35,7 +43,7 @@
     }
 }
 
-.resume__column {
+.resume-column {
     padding: $padding;
 
     &--right {
@@ -50,8 +58,11 @@
     flex-direction: column;
 }
 
-.sidebar__section {
-    margin-bottom: $padding;
+.sidebar-section {
+
+    + .sidebar-section {
+        margin-top: 2.2rem;
+    }
 
     p:last-of-type {
         margin-bottom: 0;
@@ -134,7 +145,7 @@
 
 
 
-.list__find {
+.list--find {
     list-style: none;
 
     > li {
@@ -148,7 +159,7 @@
     width: 16px;
 }
 
-.icon__awards {
+.icon--awards {
     align-items: center;
     display: flex;
     position: relative;
@@ -183,16 +194,16 @@
     }
 }
 
-.icon__email::before {
+.icon--email::before {
     color: $text;
     content: '@';
     font-weight: bold;
 }
 
-.icon__github {
+.icon--github {
     vertical-align: middle;
 }
 
-.icon__codepen {
+.icon--codepen {
     vertical-align: text-bottom;
 }
