@@ -26,10 +26,12 @@
 
 
 .resume-section {
+    margin-bottom: 2rem;
 
-    + .resume-section {
-        margin-top: 2rem;
-    }
+    // NOTE - not using the sibling selector here for margin-top so that the print layout still works. It must get confused when re-ordering the last sidebar section to the top.
+    // + .resume-section {
+    //     margin-top: 2rem;
+    // }
 }
 
 
