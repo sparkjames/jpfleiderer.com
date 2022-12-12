@@ -31,13 +31,13 @@ body.dark-mode {
     }
   }
 
-  .icon__awards {
+  .icon--awards {
     &::after {
         background-image: url('../images/icon-awards--dark-mode.svg');
     }
   }
 
-  .icon__email:before {
+  .icon--email:before {
     color: #000;
   }
 
@@ -48,5 +48,5 @@ body.dark-mode {
   .color-scheme-label--dark-mode {
     display: inline-block;
   }
-  
+
 }

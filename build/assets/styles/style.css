@@ -414,7 +414,7 @@ body {
 #modal-image {
   height: auto;
   max-width: 100%;
-  width: 800px;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
   transition: -webkit-transform .1s cubic-bezier(.2, 1.6, .55, 1.6) .19s, transform .1s cubic-bezier(.2, 1.6, .55, 1.6) .19s;
@@ -455,11 +455,11 @@ body.dark-mode a:hover {
   color: #dd6200;
 }
 
-body.dark-mode .icon__awards:after {
+body.dark-mode .icon--awards:after {
   background-image: url("../icon-awards--dark-mode.18c9e48a.svg");
 }
 
-body.dark-mode .icon__email:before {
+body.dark-mode .icon--email:before {
   color: #000;
 }
 

@@ -48,7 +48,7 @@
     max-width: 100%;
     transform: translate3d(-4.8rem, 0, 0);
     transition: transform 100ms cubic-bezier(.2,1.6,.55,1.6) 190ms;
-    width: 800px;
+    width: auto;
 
     &.is-loading {
         animation-name: fade-in-out;

@@ -1247,10 +1247,8 @@ var show_modal = function show_modal(e) {
         // console.log(modal);
         if (!modal.classList.contains("is-active")) modal.classList.add("is-active");
         var modal_image = document.getElementById("modal-image");
-        // console.log(modal_image);
-        var image_src = "" + target.dataset.screenshot;
-        // console.log(image_src);
-        modal_image.src = image_src;
+        modal_image.src = "" + target.dataset.screenshot;
+        modal_image.alt = target.dataset.alt;
     } catch (error) {
         console.log("Error showing modal: ", error);
     }

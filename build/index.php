@@ -263,7 +263,7 @@
 
 							<li class="list-item">
 								<strong><a href="https://www.preludecapital.com/" rel="nofollow noopener">Prelude Capital</a></strong>, <em>(2021)</em>
-								<p>Page speed was a big emphasis for this project, <a href="#modal" class="modal-link" data-screenshot="assets/images/2022-12-12_prelude-audit.png">we achieved a 97 for performance</a> despite the videos and high res images on the home page. This site will also feature multiple languages using the Polylang plugin.</p>
+								<p>Page speed was a big emphasis for this project, <a href="#modal" class="modal-link" data-screenshot="assets/images/2022-12-12_prelude-audit.png" data-alt="We achieved a 97 for performance on Prelude Capital's website.">we achieved a 97 for performance</a> despite the videos and high res images on the home page. This site will also feature multiple languages using the Polylang plugin.</p>
 							</li>
 
 							<li class="list-item">
