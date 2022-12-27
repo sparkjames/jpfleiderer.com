@@ -65,7 +65,7 @@
 					<section class="sidebar-section">
 						<h2 class="sidebar-heading">&lt;Greetings&gt;</h2>
 						<p>Hi, I'm James! I've been tinkering on the web for as long as I can remember. I'm a
-							self-starting, driven senior web developer who works well indedpendently but also enjoys
+							self-starting, driven senior web developer who works well independently but also enjoys
 							leading and participating in teams.</p>
 
 						<p>Always looking to hone my skills, currently learning frontend libraries like Angular in my
@@ -210,7 +210,7 @@
 								development.</li>
 							<li class="list-item">Communicated directly with clients to provide expertise on site functionality and
 								content management.</li>
-							<li class="list-item">Created an extentible module system to build WordPress templates.</li>
+							<li class="list-item">Created an extendible module system to build WordPress templates.</li>
 							<li class="list-item">Extensive work with PHP, HTML, SCSS, Javascript, Twig, and Gulp.</li>
 							<li class="list-item">All sites responsive and cross-browser compatible.</li>
 							<li class="list-item">Worked with clients to plan redesigns of their websites.</li>
@@ -258,7 +258,7 @@
 
 							<li class="list-item">
 								<strong><a href="https://beinillinois.org/" rel="nofollow noopener">Be In Illinois</a></strong>, <em>(2022)</em>
-								<p>Using a custom method for WP to seperately queue critical and non-critical CSS, this website is build to load fast even with the high-res images at the top. Modular page sections and Advanced Custom Fields make it easy to add new pages.</p>
+								<p>Using a custom method for WP to separately queue critical and non-critical CSS, this website is build to load fast even with the high-res images at the top. Modular page sections and Advanced Custom Fields make it easy to add new pages.</p>
 							</li>
 
 							<li class="list-item">
@@ -268,7 +268,7 @@
 
 							<li class="list-item">
 								<strong><a href="https://www.protectedincome.org/" rel="nofollow noopener">Protected Lifetime Income</a></strong>, <em>(2021)</em>
-								<p>This site features many custom page sections built with Advanced Custom Fields. Lazy loading is used througout to improve loading times. The hero and video sliders are built with custom controllers in ES6 Javascript.</p>
+								<p>This site features many custom page sections built with Advanced Custom Fields. Lazy loading is used throughout to improve loading times. The hero and video sliders are built with custom controllers in ES6 Javascript.</p>
 							</li>
 
 							<li class="list-item">
