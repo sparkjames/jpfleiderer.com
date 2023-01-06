@@ -523,6 +523,7 @@ body.retro {
 }
 
 body.retro h1, body.retro h2, body.retro h3, body.retro h4, body.retro h5, body.retro h6 {
+  color: #fff;
   font-family: Chalkboard, Comic Sans, Trebuchet MS, Lucida Sans Unicode, Lucida Grande, Lucida Sans, Arial, sans-serif;
 }
 
