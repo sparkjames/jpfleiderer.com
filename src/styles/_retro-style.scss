@@ -1,0 +1,97 @@
+body.retro {
+  background-color: #000;
+  background-image: url(../images/geocities/bg-space.gif);
+  background-repeat: repeat;
+  color: #eee;
+  font-family: $font-retro-serif;
+  font-size: 2rem;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-retro-sans;
+  }
+
+  .header {
+    background-color: rgba(0, 0, 0, .66);
+    border-bottom: 5px solid #ccc;
+  }
+
+  .logo {
+    max-width: none;
+  }
+
+  .logo-object {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 56px;
+    width: inherit;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+
+  }
+
+  .logo-mark {
+    fill: $primary;
+  }
+
+  .primary-heading {
+    // background-image: url(../images/geocities/title-text.gif);
+    // background-repeat: no-repeat;
+    // background-size: 100%;
+    // background-position: 0 0;
+    // height: 62px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // overflow: hidden;
+    // text-indent: 200vw;
+    // width: 542px;
+    position: relative;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    &::before,
+    &::after {
+      content: url(../images/geocities/hamster-spin.gif);
+      position: absolute;
+      top: 0;
+    }
+
+    &::before {
+      right: calc(100% + 2rem);
+    }
+
+    &::after {
+      left: calc(100% + 2rem);
+    }
+  }
+
+  .controls-color-scheme {
+    display: none;
+  }
+
+  .retro-label--retro-style {
+    display: none;
+  }
+
+  .retro-label--modern-style {
+    display: inline-block;
+  }
+
+  .sidebar {
+    background-image: url(../images/geocities/ITD-IRAP-Web-Graphics-Archives-Backgrounds.gif);
+    background-repeat: repeat;
+    border: 5px outset navy;
+    color: #000;
+    font-weight: bold;
+  }
+
+}
