@@ -8,8 +8,33 @@ function retro_style_toggle_onClick(e){
 
   if( document.body.classList.contains('retro') ){
     document.body.classList.remove('retro');
+    retro_style_stop_midi();
+
   } else {
     document.body.classList.add('retro');
+    retro_style_start_midi();
   }
 
+}
+
+
+
+let retro_midi_player;
+function retro_style_start_midi(){
+  if( !retro_midi_player ){
+    retro_midi_player = new Audio( window.location.pathname+'/assets/passport.mp3' );
+
+    retro_midi_player.addEventListener("canplaythrough", (event) => {
+      /* the audio is now playable; play it if permissions allow */
+      retro_midi_player.play();
+    });
+
+  }
+}
+
+function retro_style_stop_midi(){
+  if( retro_midi_player ){
+    retro_midi_player.pause();
+
+  }
 }

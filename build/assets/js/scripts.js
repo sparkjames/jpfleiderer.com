@@ -1924,8 +1924,25 @@ var retro_style_toggle = document.querySelector(".controls-retro-style");
 retro_style_toggle.addEventListener("click", retro_style_toggle_onClick);
 function retro_style_toggle_onClick(e) {
     e.preventDefault();
-    if (document.body.classList.contains("retro")) document.body.classList.remove("retro");
-    else document.body.classList.add("retro");
+    if (document.body.classList.contains("retro")) {
+        document.body.classList.remove("retro");
+        retro_style_stop_midi();
+    } else {
+        document.body.classList.add("retro");
+        retro_style_start_midi();
+    }
+}
+var retro_midi_player;
+function retro_style_start_midi() {
+    if (!retro_midi_player) {
+        retro_midi_player = new Audio(window.location.pathname + "/assets/passport.mp3");
+        retro_midi_player.addEventListener("canplaythrough", function(event) {
+            /* the audio is now playable; play it if permissions allow */ retro_midi_player.play();
+        });
+    }
+}
+function retro_style_stop_midi() {
+    if (retro_midi_player) retro_midi_player.pause();
 }
 
 },{}]},["kCkDd","PZ93j"], "PZ93j", "parcelRequire7c38")
