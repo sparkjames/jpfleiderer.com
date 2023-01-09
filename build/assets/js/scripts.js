@@ -1936,10 +1936,10 @@ var retro_midi_player;
 function retro_style_start_midi() {
     if (!retro_midi_player) {
         retro_midi_player = new Audio(window.location.pathname + "/assets/passport.mp3");
-        retro_midi_player.addEventListener("canplaythrough", function(event) {
-            /* the audio is now playable; play it if permissions allow */ retro_midi_player.play();
+        retro_midi_player.addEventListener("canplaythrough", function() {
+            retro_midi_player.play();
         });
-    }
+    } else retro_midi_player.play();
 }
 function retro_style_stop_midi() {
     if (retro_midi_player) retro_midi_player.pause();
