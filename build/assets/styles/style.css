@@ -516,7 +516,7 @@ body.dark-mode .color-scheme-label--dark-mode {
 body.retro {
   color: #eee;
   background-color: #000;
-  background-image: url("../bg-space.e38d67d0.gif");
+  background-image: url("../bg-space2.13fc75e8.gif");
   background-repeat: repeat;
   font-family: Times New Roman, Times, serif;
   font-size: 2rem;
@@ -524,12 +524,12 @@ body.retro {
 
 body.retro h1, body.retro h2, body.retro h3, body.retro h4, body.retro h5, body.retro h6 {
   color: #fff;
-  font-family: Chalkboard, Comic Sans, Trebuchet MS, Lucida Sans Unicode, Lucida Grande, Lucida Sans, Arial, sans-serif;
+  font-family: Chalkboard, Comic Sans MS, Comic Sans, Trebuchet MS, Lucida Sans Unicode, Lucida Grande, Lucida Sans, Arial, sans-serif;
 }
 
 body.retro .header {
   background-color: rgba(0, 0, 0, .66);
-  border-bottom: 5px solid #ccc;
+  border-bottom: 10px outset #ccc;
 }
 
 body.retro .logo {
@@ -588,12 +588,42 @@ body.retro .retro-label--modern-style {
   display: inline-block;
 }
 
+body.retro .resume-body {
+  border: 10px groove #ff8400;
+}
+
 body.retro .sidebar {
-  color: #000;
-  background-image: url("../ITD-IRAP-Web-Graphics-Archives-Backgrounds.508aa339.gif");
+  background-image: url("../bg-space3.14701e31.gif");
   background-repeat: repeat;
-  border: 5px outset navy;
+  border: 10px outset #fff;
   font-weight: bold;
+}
+
+body.retro .a-wild-table-appears {
+  border: 3px outset;
+}
+
+body.retro .a-wild-table-appears td {
+  border: 3px solid #f0f;
+}
+
+body.retro .sidebar-section--find-me {
+  color: navy;
+  background-color: #ff0;
+  border: 6px groove;
+  padding: 6px;
+}
+
+body.retro .sidebar-section--find-me .sidebar-heading {
+  color: navy;
+}
+
+body.retro .resume-section:after {
+  content: url("../hr-1.c90dba78.gif");
+  height: 18px;
+  max-width: 528px;
+  width: 100%;
+  display: block;
 }
 
 @media print {

@@ -1,6 +1,6 @@
 body.retro {
   background-color: #000;
-  background-image: url(../images/geocities/bg-space.gif);
+  background-image: url(../images/geocities/bg-space2.gif);
   background-repeat: repeat;
   color: #eee;
   font-family: $font-retro-serif;
@@ -18,7 +18,7 @@ body.retro {
 
   .header {
     background-color: rgba(0, 0, 0, .66);
-    border-bottom: 5px solid #ccc;
+    border-bottom: 10px outset #ccc;
   }
 
   .logo {
@@ -87,12 +87,44 @@ body.retro {
     display: inline-block;
   }
 
+  .resume-body {
+    border: 10px groove $primary;
+  }
+
   .sidebar {
-    background-image: url(../images/geocities/ITD-IRAP-Web-Graphics-Archives-Backgrounds.gif);
+    background-image: url(../images/geocities/bg-space3.gif);
     background-repeat: repeat;
-    border: 5px outset navy;
-    color: #000;
+    border: 10px outset white;
     font-weight: bold;
+  }
+
+  .a-wild-table-appears {
+    border: 3px outset;
+
+    td {
+      border: 3px solid #f0f;
+    }
+  }
+
+  .sidebar-section--find-me {
+    background-color: yellow;
+    color: navy;
+    border: 6px groove;
+    padding: 6px;
+
+    .sidebar-heading {
+      color: navy;
+    }
+  }
+
+  .resume-section {
+    &::after {
+      display: block;
+      content: url(../images/geocities/hr-1.gif);
+      height: 18px;
+      max-width: 528px;
+      width: 100%;
+    }
   }
 
 }

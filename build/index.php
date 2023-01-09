@@ -14,7 +14,13 @@
 		<link rel='stylesheet' href='assets/styles/style.css?ver=20221209' type='text/css' media='all'>
 	</noscript>
 	<link rel='stylesheet' href='assets/styles/style.css?ver=20221209' type='text/css' media='print' onload="this.media='all'; this.onload=null;">
+	<style>
+		body {
+			opacity: 0
+		}
 
+		;
+	</style>
 
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-26496563-1"></script>
@@ -135,22 +141,22 @@
 						</table>
 					</section>
 
-					<section class="sidebar-section" id="find-me">
+					<section class="sidebar-section sidebar-section--find-me" id="find-me">
 						<h2 class="sidebar-heading">Find Me</h2>
 						<ul class="list list--find">
 							<li class="list-item">
-								<i class="icon icon--home"><img src="assets/images/icon-home.svg" height="16" width="16" alt="Home icon"></i>
+								<i class="icon icon--home"><img loading="lazy" src="assets/images/icon-home.svg" height="16" width="16" alt="Home icon"></i>
 								Washington, DC
 							</li>
 							<li class="list-item">
 								<a href="http://github.com/sparkjames">
-									<i class="icon icon--github"><img src="assets/images/icon-github.svg" height="16" width="16" alt="Github icon"></i>
+									<i class="icon icon--github"><img loading="lazy" src="assets/images/icon-github.svg" height="16" width="16" alt="Github icon"></i>
 									github.com/sparkjames
 								</a>
 							</li>
 							<li class="list-item">
 								<a href="https://codepen.io/sparkjames/">
-									<i class="icon icon--codepen"><img src="assets/images/icon-codepen.svg" height="16" width="16" alt="Codepen icon"></i>
+									<i class="icon icon--codepen"><img loading="lazy" src="assets/images/icon-codepen.svg" height="16" width="16" alt="Codepen icon"></i>
 									codepen.io/sparkjames
 								</a>
 							</li>
@@ -165,7 +171,7 @@
 
 				</aside>
 
-				<div class="resume-column resume-column--right">
+				<main class="resume-column resume-body">
 
 					<section id="education" class="resume-section">
 						<h2 class="resume-heading">Education</h2>
@@ -343,7 +349,7 @@
 					</section>
 
 
-				</div>
+				</main>
 
 			</div><!-- END .resume-table -->
 
@@ -356,7 +362,14 @@
 		</a>
 	</div>
 
-	<script src="assets/js/scripts.js"></script>
+	<script src="assets/js/scripts.js" async></script>
+	<style>
+		body {
+			opacity: 1
+		}
+
+		;
+	</style>
 </body>
 
 </html>
