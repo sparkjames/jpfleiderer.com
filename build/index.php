@@ -133,7 +133,7 @@
 						<ul class="list list--find">
 							<li class="list-item">
 								<i class="icon icon--home"><img src="assets/images/icon-home.svg" height="16" width="16" alt="Home icon"></i>
-								Washington, DC
+								Lexington, KY
 							</li>
 							<li class="list-item">
 								<a href="http://github.com/sparkjames">
