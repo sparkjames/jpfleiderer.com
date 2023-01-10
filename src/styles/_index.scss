@@ -24,6 +24,14 @@
     display: none;
 }
 
+.retro-label--retro-style {
+    display: inline-block;
+}
+
+.retro-label--modern-style {
+    display: none;
+}
+
 
 .resume-section {
     margin-bottom: 2rem;
@@ -47,10 +55,9 @@
 
 .resume-column {
     padding: $padding;
+}
 
-    &--right {
-        // flex-basis: 64%;
-    }
+.resume-body {
 
 }
 

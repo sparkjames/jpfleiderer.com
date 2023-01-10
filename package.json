@@ -29,6 +29,7 @@
   },
   "parcelIgnore": [
     "**/images/*.*",
-    "**/webfonts/*.*"
+    "**/webfonts/*.*",
+    "**/passport.mp3"
   ]
 }

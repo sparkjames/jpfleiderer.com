@@ -1,8 +1,23 @@
 @keyframes fade-in-out {
-    from {
-        opacity: .2;
-    }
-    to {
-        opacity: .8;
-    }
+	from {
+		opacity: .2;
+	}
+
+	to {
+		opacity: .8;
+	}
+}
+
+
+
+@keyframes spin {
+	0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotateX(360deg) rotateY(180deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
 }

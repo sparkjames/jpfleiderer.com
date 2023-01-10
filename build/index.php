@@ -14,7 +14,13 @@
 		<link rel='stylesheet' href='assets/styles/style.css?ver=20221209' type='text/css' media='all'>
 	</noscript>
 	<link rel='stylesheet' href='assets/styles/style.css?ver=20221209' type='text/css' media='print' onload="this.media='all'; this.onload=null;">
+	<style>
+		body {
+			opacity: 0
+		}
 
+		;
+	</style>
 
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-26496563-1"></script>
@@ -38,9 +44,9 @@
 		<div class="header-inner container">
 
 			<div class="logo">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-					<circle fill="#0C2530" cx="16" cy="16" r="16" />
-					<path fill="#FFF" d="M26.9 10.4c-.2-.7-.6-1.3-1.1-1.8-.5-.5-1.1-1-1.9-1.3-.8-.3-1.7-.5-2.9-.5h-8.2v3.1H19.9c.5 0 .9 0 1.3.1s.8.2 1.1.4c.3.2.6.5.8.8.2.4.3.8.3 1.4 0 .6-.1 1-.3 1.4-.2.4-.5.6-.8.8-.3.2-.7.3-1.1.4-.4.1-.9.1-1.3.1h-3.1v-3.4h-4V20c0 .3-.1.7-.2 1-.1.3-.3.5-.6.7-.3.2-.7.3-1.2.3s-.9-.1-1.1-.2c-.3-.2-.5-.4-.7-.6-.2-.3-.3-.6-.4-.9-.1-.4-.1-.8-.1-1.2v-.8H4.8v1.6c0 1 .2 1.8.5 2.5s.8 1.3 1.3 1.7c.6.4 1.2.8 1.9 1 .7.2 1.4.3 2.2.3 1.3 0 2.4-.2 3.2-.6.8-.4 1.4-.9 1.8-1.5.4-.6.7-1.3.8-2 .1-.7.2-1.4.2-1.9v-.8H21c1.1 0 2.1-.2 2.9-.5.8-.3 1.4-.8 1.9-1.3s.9-1.2 1.1-1.9c.2-.7.3-1.4.3-2.1 0-1-.1-1.7-.3-2.4z" />
+				<svg class="logo-object" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+					<circle class="logo-circle" fill="#0C2530" cx="16" cy="16" r="16" />
+					<path class="logo-mark" fill="#FFF" d="M26.9 10.4c-.2-.7-.6-1.3-1.1-1.8-.5-.5-1.1-1-1.9-1.3-.8-.3-1.7-.5-2.9-.5h-8.2v3.1H19.9c.5 0 .9 0 1.3.1s.8.2 1.1.4c.3.2.6.5.8.8.2.4.3.8.3 1.4 0 .6-.1 1-.3 1.4-.2.4-.5.6-.8.8-.3.2-.7.3-1.1.4-.4.1-.9.1-1.3.1h-3.1v-3.4h-4V20c0 .3-.1.7-.2 1-.1.3-.3.5-.6.7-.3.2-.7.3-1.2.3s-.9-.1-1.1-.2c-.3-.2-.5-.4-.7-.6-.2-.3-.3-.6-.4-.9-.1-.4-.1-.8-.1-1.2v-.8H4.8v1.6c0 1 .2 1.8.5 2.5s.8 1.3 1.3 1.7c.6.4 1.2.8 1.9 1 .7.2 1.4.3 2.2.3 1.3 0 2.4-.2 3.2-.6.8-.4 1.4-.9 1.8-1.5.4-.6.7-1.3.8-2 .1-.7.2-1.4.2-1.9v-.8H21c1.1 0 2.1-.2 2.9-.5.8-.3 1.4-.8 1.9-1.3s.9-1.2 1.1-1.9c.2-.7.3-1.4.3-2.1 0-1-.1-1.7-.3-2.4z" />
 				</svg>
 			</div>
 
@@ -53,10 +59,17 @@
 		<div class="content-inner container">
 
 			<div class="controls">
+
 				<button class="controls-color-scheme" type="button">
 					<span class="color-scheme-label color-scheme-label--light-mode">Toggle Dark Mode</span>
 					<span class="color-scheme-label color-scheme-label--dark-mode">Toggle Light Mode</span>
 				</button>
+
+				<button class="controls-retro-style" type="button">
+					<span class="retro-label retro-label--retro-style">Toggle Retro Style</span>
+					<span class="retro-label retro-label--modern-style">Toggle Modern Style</span>
+				</button>
+
 			</div>
 
 			<div class="resume-table">
@@ -128,7 +141,7 @@
 						</table>
 					</section>
 
-					<section class="sidebar-section" id="find-me">
+					<section class="sidebar-section sidebar-section--find-me" id="find-me">
 						<h2 class="sidebar-heading">Find Me</h2>
 						<ul class="list list--find">
 							<li class="list-item">
@@ -137,13 +150,13 @@
 							</li>
 							<li class="list-item">
 								<a href="http://github.com/sparkjames">
-									<i class="icon icon--github"><img src="assets/images/icon-github.svg" height="16" width="16" alt="Github icon"></i>
+									<i class="icon icon--github"><img loading="lazy" src="assets/images/icon-github.svg" height="16" width="16" alt="Github icon"></i>
 									github.com/sparkjames
 								</a>
 							</li>
 							<li class="list-item">
 								<a href="https://codepen.io/sparkjames/">
-									<i class="icon icon--codepen"><img src="assets/images/icon-codepen.svg" height="16" width="16" alt="Codepen icon"></i>
+									<i class="icon icon--codepen"><img loading="lazy" src="assets/images/icon-codepen.svg" height="16" width="16" alt="Codepen icon"></i>
 									codepen.io/sparkjames
 								</a>
 							</li>
@@ -158,7 +171,7 @@
 
 				</aside>
 
-				<div class="resume-column resume-column--right">
+				<main class="resume-column resume-body">
 
 					<section id="education" class="resume-section">
 						<h2 class="resume-heading">Education</h2>
@@ -336,7 +349,7 @@
 					</section>
 
 
-				</div>
+				</main>
 
 			</div><!-- END .resume-table -->
 
@@ -349,7 +362,14 @@
 		</a>
 	</div>
 
-	<script src="assets/js/scripts.js"></script>
+	<script src="assets/js/scripts.js" async></script>
+	<style>
+		body {
+			opacity: 1
+		}
+
+		;
+	</style>
 </body>
 
 </html>
