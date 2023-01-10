@@ -43,27 +43,26 @@ body.retro {
   }
 
   .primary-heading {
-    // background-image: url(../images/geocities/title-text.gif);
-    // background-repeat: no-repeat;
-    // background-size: 100%;
-    // background-position: 0 0;
-    // height: 62px;
-    // margin-left: auto;
-    // margin-right: auto;
-    // overflow: hidden;
-    // text-indent: 200vw;
-    // width: 542px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     text-align: center;
     width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+
+    @media screen and (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+    }
 
     &::before,
     &::after {
       content: url(../images/geocities/hamster-spin.gif);
       position: absolute;
       top: 0;
+
+    @media screen and (max-width: 800px) {
+      position: static;
+    }
     }
 
     &::before {
@@ -119,11 +118,19 @@ body.retro {
 
   .resume-section {
     &::after {
+      background-image: url(../images/geocities/hr-1.gif);
+      background-repeat: no-repeat;
+      background-size: contain;
       display: block;
-      content: url(../images/geocities/hr-1.gif);
+      content: '';
+      // content: url(../images/geocities/hr-1.gif);
       height: 18px;
       max-width: 528px;
       width: 100%;
+
+      @media screen and (max-width: 800px) {
+
+      }
     }
   }
 

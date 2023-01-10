@@ -566,10 +566,25 @@ body.retro .primary-heading {
   position: relative;
 }
 
+@media screen and (max-width: 800px) {
+  body.retro .primary-heading {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+
 body.retro .primary-heading:before, body.retro .primary-heading:after {
   content: url("../hamster-spin.a6cbdb21.gif");
   position: absolute;
   top: 0;
+}
+
+@media screen and (max-width: 800px) {
+  body.retro .primary-heading:before, body.retro .primary-heading:after {
+    position: static;
+  }
 }
 
 body.retro .primary-heading:before {
@@ -619,10 +634,13 @@ body.retro .sidebar-section--find-me .sidebar-heading {
 }
 
 body.retro .resume-section:after {
-  content: url("../hr-1.c90dba78.gif");
+  content: "";
   height: 18px;
   max-width: 528px;
   width: 100%;
+  background-image: url("../hr-1.c90dba78.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
   display: block;
 }
 
