@@ -11,9 +11,9 @@
 	<title>James Pfleiderer - Senior Web Developer</title>
 
 	<noscript>
-		<link rel='stylesheet' href='assets/styles/style.css?ver=20221209' type='text/css' media='all'>
+		<link rel='stylesheet' href='assets/styles/style.css?ver=20230110' type='text/css' media='all'>
 	</noscript>
-	<link rel='stylesheet' href='assets/styles/style.css?ver=20221209' type='text/css' media='print' onload="this.media='all'; this.onload=null;">
+	<link rel='stylesheet' href='assets/styles/style.css?ver=20230110' type='text/css' media='print' onload="this.media='all'; this.onload=null;">
 	<style>
 		body {
 			opacity: 0
@@ -362,7 +362,7 @@
 		</a>
 	</div>
 
-	<script src="assets/js/scripts.js" async></script>
+	<script src="assets/js/scripts.js?ver=20230110" async></script>
 	<style>
 		body {
 			opacity: 1
