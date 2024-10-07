@@ -92,7 +92,7 @@
 							<li class="list-item">Git</li>
 							<li class="list-item">Gulp/<wbr>Parcel</li>
 							<li class="list-item">OpenAI/ChatGPT</li>
-							<li class="list-item">Accesibility</li>
+							<li class="list-item">a11y</li>
 							<li class="list-item">i18n</li>
 							<li class="list-item">SEO</li>
 							<li class="list-item">Pagespeed</li>
