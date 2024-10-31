@@ -97,6 +97,7 @@
   background-color: #f0f2f4;
   -webkit-flex-direction: column;
   flex-direction: column;
+  transition: background-color .6s ease-out, color .6s ease-out;
   display: -webkit-flex;
   display: flex;
 }

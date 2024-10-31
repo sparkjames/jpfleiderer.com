@@ -69,6 +69,7 @@ body {
   font-family: Montserrat, arial, sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
+  transition: background-color .6s ease-out, color .6s ease-out;
 }
 
 strong {
@@ -90,7 +91,7 @@ button {
   border: 1px solid #777;
   border-radius: .25rem;
   padding: .25em .5em;
-  transition: opacity .125s;
+  transition: opacity .125s, border-color .6s ease-out, color .6s ease-out;
 }
 
 button:hover {
@@ -100,6 +101,7 @@ button:hover {
 h1, h2, h3, h4, h5, h6 {
   color: #000;
   font-weight: bold;
+  transition: background-color .6s ease-out, color .6s ease-out;
 }
 
 h1 {
@@ -146,6 +148,7 @@ p {
 
 a {
   text-decoration: none;
+  transition: color .6s ease-out;
 }
 
 a:hover, a:focus {
