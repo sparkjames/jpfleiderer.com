@@ -9,7 +9,7 @@
 
 	<title>James Pfleiderer - Senior Web Developer</title>
 
-	<style><?php echo file_get_contents('assets/styles/style-critical.css'); ?></style>
+	<style><?php echo file_get_contents('./assets/styles/style-critical.css', FILE_USE_INCLUDE_PATH); ?></style>
 
 	<?php
 	$css_version = filemtime('assets/styles/style-critical.css');
