@@ -1,0 +1,28 @@
+name: Deploy to production (master for testing)
+on:
+  # push:
+  #   branches: [production]
+  workflow_dispatch:
+jobs:
+  prod-deployment:
+    name: Deploy to production server
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up SSH key
+        run: |
+          mkdir ~/.ssh
+          echo "${{ secrets.PROD_PRIVATE_KEY }}" > ~/.ssh/id_github
+          chmod 600 ~/.ssh/id_github
+      - name: Pull repo and checkout production branch
+        uses: actions/checkout@v4
+        with:
+          ref: master
+      - name: Install node_modules
+        run: npm install
+      - name: Run build script
+        run: CI=false npm run build
+      - name: Deploy contents of build folder to remote server
+        run: rsync -chrltDv -e "ssh -i ~/.ssh/id_github -o StrictHostKeyChecking=no" --delete public/* ${{ secrets.PROD_USER }}@${{ secrets.PROD_HOST }}:${{ secrets.PROD_PATH }}
+      - name: Remove SSH key
+        if: always()
+        run: rm -f ~/.ssh/id_github
