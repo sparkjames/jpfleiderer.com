@@ -5,8 +5,8 @@
   "browserslist": "> 0.5%, last 2 versions, not dead, iOS >= 7",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "parcel watch src/js/scripts.js src/styles/style.scss src/styles/style-critical.scss --public-url ./",
-    "build": "parcel build src/js/scripts.js src/styles/style.scss src/styles/style-critical.scss --public-url ./"
+    "watch": "parcel watch src/js/scripts.js src/styles/*.scss --public-url ./",
+    "build": "parcel build src/js/scripts.js src/styles/*.scss --public-url ./"
   },
   "keywords": [],
   "author": "",

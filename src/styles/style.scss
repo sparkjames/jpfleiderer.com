@@ -1,10 +1,8 @@
-@import 'config';
+@import 'includes/config';
 
-@import 'animations';
-@import 'index';
-@import 'dark-mode';
-@import 'retro-style';
+@import 'includes/animations';
+@import 'templates/index';
+@import 'includes/dark-mode';
+@import 'includes/retro-style';
 
-@import 'print';
-
-@import 'custom';
+@import 'includes/print';

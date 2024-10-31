@@ -1,7 +1,7 @@
-@import 'config';
+@import 'includes/config';
 
-@import 'reset';
-@import 'base';
-@import 'layout';
-@import 'header';
-@import 'modal';
+@import 'includes/reset';
+@import 'includes/base';
+@import 'includes/layout';
+@import 'components/header';
+@import 'components/modal';
