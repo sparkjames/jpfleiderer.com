@@ -1,6 +1,14 @@
+# OS files
 .DS_Store
+
+# Build files
 node_modules
 .sass-cache
 .parcel-cache
+
+# Locally stored files
 images/uncompressed
 _assets
+
+# From Local
+/sql
