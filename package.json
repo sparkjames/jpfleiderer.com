@@ -23,7 +23,7 @@
   },
   "targets": {
     "default": {
-      "distDir": "./build/assets",
+      "distDir": "./public/assets",
       "optimize": true
     }
   },
