@@ -1,4 +1,5 @@
 body.retro {
+  opacity: 0.1;
   background-color: #000;
   background-image: url(../images/geocities/bg-space2.gif);
   background-repeat: repeat;
@@ -17,12 +18,20 @@ body.retro {
   }
 
   .header {
-    background-color: rgba(0, 0, 0, .66);
+    background-color: rgba(0, 0, 0, 0.66);
     border-bottom: 10px outset #ccc;
+  }
+
+  .header-inner {
+    display: block;
   }
 
   .logo {
     max-width: none;
+
+    &::after {
+      display: none !important;
+    }
   }
 
   .logo-object {
@@ -35,7 +44,6 @@ body.retro {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     transform-origin: center;
-
   }
 
   .logo-mark {
@@ -60,9 +68,9 @@ body.retro {
       position: absolute;
       top: 0;
 
-    @media screen and (max-width: 800px) {
-      position: static;
-    }
+      @media screen and (max-width: 800px) {
+        position: static;
+      }
     }
 
     &::before {
@@ -122,16 +130,14 @@ body.retro {
       background-repeat: no-repeat;
       background-size: contain;
       display: block;
-      content: '';
+      content: "";
       // content: url(../images/geocities/hr-1.gif);
       height: 18px;
       max-width: 528px;
       width: 100%;
 
       @media screen and (max-width: 800px) {
-
       }
     }
   }
-
 }

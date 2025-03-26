@@ -33,7 +33,7 @@ body.dark-mode {
 
   .icon--awards {
     &::after {
-        background-image: url('../images/icon-awards--dark-mode.svg');
+      background-image: url("../images/icon-awards--dark-mode.svg");
     }
   }
 
@@ -42,11 +42,10 @@ body.dark-mode {
   }
 
   .color-scheme-label--light-mode {
-      display: none;
+    display: none;
   }
 
   .color-scheme-label--dark-mode {
     display: inline-block;
   }
-
 }
