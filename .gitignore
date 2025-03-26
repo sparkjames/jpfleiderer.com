@@ -12,3 +12,19 @@ _assets
 
 # From Local
 /sql
+
+# public directory
+public/*
+!public/apple-touch-icon.png
+!public/favicon-96x96.png
+!public/favicon.ico
+!public/favicon.svg
+!public/index.php
+!public/site.webmanifest
+!public/web-app-manifest-192x192.png
+!public/web-app-manifest-512x512.png
+!public/assets/index.php
+!public/assets/passport.mp3
+!public/assets/images/*
+!public/assets/js/index.php
+!public/assets/styles/index.php
