@@ -2,218 +2,201 @@
 
 // }
 
-
 .controls {
-    padding-bottom: $padding;
-    padding-top: $padding;
+  padding-bottom: $padding;
+  padding-top: $padding;
 }
 
 .controls-color-scheme {
-
 }
 
 .color-scheme-label {
-
 }
 
 .color-scheme-label--light-mode {
-    display: inline-block;
+  display: inline-block;
 }
 
 .color-scheme-label--dark-mode {
-    display: none;
+  display: none;
 }
 
 .retro-label--retro-style {
-    display: inline-block;
+  display: inline-block;
 }
 
 .retro-label--modern-style {
-    display: none;
+  display: none;
 }
-
 
 .resume-section {
-    margin-bottom: 2rem;
+  margin-bottom: 5rem;
 
-    // NOTE - not using the sibling selector here for margin-top so that the print layout still works. It must get confused when re-ordering the last sidebar section to the top.
-    // + .resume-section {
-    //     margin-top: 2rem;
-    // }
+  // NOTE - not using the sibling selector here for margin-top so that the print layout still works. It must get confused when re-ordering the last sidebar section to the top.
+  // + .resume-section {
+  //     margin-top: 2rem;
+  // }
 }
 
-
 .resume-table {
-    display: grid;
-    grid-template-columns: 36% 64%;
-    grid-gap: 32px;
+  display: grid;
+  grid-template-columns: 36% 64%;
+  grid-gap: 32px;
 
-    @media screen and (max-width: $breakpoint-tablet){
-        display: block;
-    }
+  @media screen and (max-width: $breakpoint-tablet) {
+    display: block;
+  }
 }
 
 .resume-column {
-    padding: $padding;
+  padding: $padding;
 }
 
 .resume-body {
-
 }
 
 .sidebar {
-    background-color: $bg;
-    display: flex;
-    flex-direction: column;
-    transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  background-color: $bg;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.6s ease-out, color 0.6s ease-out;
 }
 
 .sidebar-section {
+  + .sidebar-section {
+    margin-top: 2.2rem;
+  }
 
-    + .sidebar-section {
-        margin-top: 2.2rem;
-    }
-
-    p:last-of-type {
-        margin-bottom: 0;
-    }
-
+  p:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
-
-
 .list-title {
-    margin-bottom: .66em;
+  margin-bottom: 0.66em;
 }
 
 .list {
-    list-style: disc;
+  list-style: disc;
 }
 
 .list-item {
-    margin-left: $padding;
+  margin-left: $padding;
 
-    + .list-item {
-        padding-top: calc($padding / 4);
-    }
+  + .list-item {
+    padding-top: calc($padding / 4);
+  }
 }
 
 .list--columns {
-    columns: 2;
+  columns: 2;
 
-    @media screen and (max-width: $breakpoint-mobile){
-        columns: 1;
-        list-style: disc;
+  @media screen and (max-width: $breakpoint-mobile) {
+    columns: 1;
+    list-style: disc;
 
-        li {
-            margin-left: 1em;
-        }
+    li {
+      margin-left: 1em;
     }
+  }
 }
 
 .list--awards,
 .list--experience {
-    margin-bottom: $padding;
+  margin-bottom: $padding;
 }
-
-
 
 .a-wild-table-appears {
+  td {
+    width: 50%;
 
+    &:first-child {
+      font-weight: bold;
+    }
+
+    &:nth-child(2) {
+      padding-left: 1em;
+    }
+  }
+
+  tr + tr td {
+    padding-top: calc($padding / 4);
+  }
+
+  @media screen and (min-width: $breakpoint-tablet) and (max-width: 960px) {
+    display: block;
+
+    tr,
     td {
-        width: 50%;
-
-        &:first-child {
-            font-weight: bold;
-        }
-
-        &:nth-child(2) {
-            padding-left: 1em;
-        }
+      display: block;
+      width: 100%;
     }
 
-    tr + tr td {
-        padding-top: calc($padding / 4);
+    td:nth-child(2) {
+      padding-top: 0;
     }
-
-    @media screen and (min-width:$breakpoint-tablet) and (max-width:960px){
-        display: block;
-
-        tr,
-        td {
-            display: block;
-            width: 100%;
-        }
-
-        td:nth-child(2) {
-            padding-top: 0;
-        }
-    }
-
+  }
 }
 
-
-
-
 .list--find {
-    list-style: none;
+  list-style: none;
 
-    > li {
-        margin-left: 0;
-    }
+  > li {
+    margin-left: 0;
+  }
 }
 
 .icon {
-    display: inline-block;
-    height: 16px;
-    width: 16px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
 }
 
 .icon--awards {
-    align-items: center;
-    display: flex;
-    position: relative;
-    width: 100%;
+  align-items: center;
+  display: flex;
+  position: relative;
+  width: 100%;
 
-    // &::before {
-    //     background-color: #fff;
-    //     content: '';
-    //     display: block;
-    //     width: 20px;
-    //     height: 20px;
-    //     border-radius: 50%;
-    //     position: absolute;
-    //     left: 5.35em;
-    //     top: 0.25em;
-    //     z-index: 1;
-    // }
+  // &::before {
+  //     background-color: #fff;
+  //     content: '';
+  //     display: block;
+  //     width: 20px;
+  //     height: 20px;
+  //     border-radius: 50%;
+  //     position: absolute;
+  //     left: 5.35em;
+  //     top: 0.25em;
+  //     z-index: 1;
+  // }
 
-    &::after {
-        background-image: url('../images/icon-awards.svg');
-        background-position: left top;
-        background-repeat: no-repeat;
-        background-size: contain;
-        content: '';
-        display: inline-block;
-        height: 46px;
-        margin-left: .25em;
-        // position: relative;
-        vertical-align: middle;
-        width: 36px;
-        // z-index: 2;
-    }
+  &::after {
+    background-image: url("../images/icon-awards.svg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    display: inline-block;
+    height: 46px;
+    margin-left: 0.25em;
+    // position: relative;
+    vertical-align: middle;
+    width: 36px;
+    // z-index: 2;
+  }
 }
 
 .icon--email::before {
-    color: $text;
-    content: '@';
-    font-weight: bold;
+  color: $text;
+  content: "@";
+  font-weight: bold;
 }
 
 .icon--github {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .icon--codepen {
-    vertical-align: text-bottom;
+  vertical-align: text-bottom;
 }
