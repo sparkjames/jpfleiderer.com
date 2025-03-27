@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
 	<link rel='dns-prefetch' href='//fonts.googleapis.com'>
 
@@ -16,7 +17,9 @@
 	<meta name="apple-mobile-web-app-title" content="JPfleiderer" />
 	<link rel="manifest" href="/site.webmanifest" />
 
-	<style><?php echo file_get_contents('./assets/styles/style-critical.css', FILE_USE_INCLUDE_PATH); ?></style>
+	<style>
+		<?php echo file_get_contents('./assets/styles/style-critical.css', FILE_USE_INCLUDE_PATH); ?>
+	</style>
 
 	<?php
 	$css_version = filemtime('assets/styles/style-critical.css');
@@ -28,7 +31,15 @@
 
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-26496563-1"></script>
-	<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','UA-26496563-1');</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-26496563-1');
+	</script>
 
 </head>
 
@@ -176,12 +187,6 @@
 
 				<main class="resume-column resume-body">
 
-					<section id="education" class="resume-section">
-						<h2 class="resume-heading">Education</h2>
-						<p>Bachelor of Digital Media &mdash; Interactive Systems, 2009<br>
-							University of Central Florida</p>
-					</section>
-
 					<!-- <section id="current" class="resume-section">
 
 						<h2 class="resume-heading">Current Employment</h2>
@@ -197,18 +202,28 @@
 						<h2 class="resume-heading">Experience</h2>
 
 						<p class="list-title">
+							<strong>NASA, Senior Web Developer</strong>
+							<em>(2024-2025)</em>
+						</p>
+						<ul class="list list--experience">
+							<li class="list-item">Increased operational efficiency by consolidating dozens of different NASA orgs' websites under nasa.gov.</li>
+							<li class="list-item">Integrated search.gov to increase availability of NASA content.</li>
+							<li class="list-item">Increased engagement and functionality with new content blocks like image comparisons and forms, built in React.</li>
+							<li class="list-item">Documented plugin and theme component processes to
+								enhance internal developer resources.</li>
+						</ul>
+
+						<p class="list-title">
 							<strong>nclud, Senior Full-stack Developer</strong>
 							<em>(2023-2024)</em>
 						</p>
 						<ul class="list list--experience">
-							<li class="list-item">Set up deployment processes (CI/CD) with Git Actions for our websites and projects hosted on AWS Lightsail.</li>
-							<li class="list-item">Develop custom Gutenberg blocks using both React and Advanced Custom Fields.</li>
-							<li class="list-item">Build fully custom WordPress websites with full multi-language features (i18n).</li>
+							<li class="list-item">Automated deployment processes using GitHub Actions to reduce time and errors.</li>
+							<li class="list-item">Developed custom Gutenberg blocks to improve end-user’s ability to edit website content.</li>
 							<li class="list-item">Worked directly with clients to manage work requests and review project progress.</li>
-							<li class="list-item">Plan and manage tasks for myself and other developers on the team.</li>
-							<li class="list-item">Provided expertise and guidance for other in-house developers on WordPress projects.</li>
-							<li class="list-item">Extensive work with PHP, HTML, SCSS, Javascript, Gulp, and Parcel.</li>
-							<li class="list-item">All sites responsive and cross-browser compatible.</li>
+							<li class="list-item">Added full multi-language features (i18n) for clients to reach multiple markets and increase business.</li>
+							<li class="list-item">Planned and managed tasks for myself and other developers.</li>
+							<li class="list-item">Improved team performance by providing expertise and guidance for other in-house developers.</li>
 						</ul>
 
 						<p class="list-title">
@@ -216,18 +231,13 @@
 							<em>(2021 - 2022)</em>
 						</p>
 						<ul class="list list--experience">
-							<li class="list-item">Prepared and mapped out site features and architecture based on client needs.</li>
-							<li class="list-item">Implemented custom WordPress boilerplate to from which we began all WordPress
-								projects, using Parcel for ease of use by other developers.</li>
-							<li class="list-item">Built WordPress sites from scratch as a solo developer and as a team, using Sketch
-								and Figma designs from in-house designers.</li>
-							<li class="list-item">Built WordPress themes and plugins to connect with different APIs from weather and
-								stock prices to custom content APIs provided by the client.</li>
-							<li class="list-item">Built custom API for WordPress to serve content to third party websites.</li>
-							<li class="list-item">Provided expertise and guidance for other in-house developers on WordPress projects.
-							</li>
-							<li class="list-item">Extensive work with PHP, HTML, SCSS, Javascript, Gulp, and Parcel.</li>
-							<li class="list-item">All sites responsive and cross-browser compatible.</li>
+							<li class="list-item">Streamlined project timelines by planning features, architecture, and scope in build specification documents.</li>
+							<li class="list-item">Implemented custom WordPress boilerplate to decrease time and effort to start new projects.</li>
+							<li class="list-item">Developed WordPress sites from scratch, both independently and collaboratively, based on Sketch and Figma designs.</li>
+							<li class="list-item">Integrated APIs (e.g., weather, stock prices) into WordPress themes and plugins to enhance content dynamism.</li>
+							<li class="list-item">Developed a custom WordPress API to streamline content
+								delivery for external platforms, reducing technical debt.</li>
+							<li class="list-item">Provided expertise and guidance for other in-house developers.</li>
 						</ul>
 
 						<p class="list-title">
@@ -235,22 +245,11 @@
 							<em>(2018 - 2021)</em>
 						</p>
 						<ul class="list list--experience">
-							<li class="list-item">In charge of WordPress operations which involved managing other developers and
-								planning sprint/task lists.</li>
-							<li class="list-item">Provided expertise and led other developers (both in-house and external) on
-								WordPress projects.</li>
-							<li class="list-item">Created WordPress sites, as a solo developer and as a team, from in-house Photoshop
-								and XD designs.</li>
-							<li class="list-item">Planned and managed site functionality and architecture as projects moved from
-								sales, to planning, to the design process.</li>
-							<li class="list-item">Created "scope of work" and "build specification" documents to help define our
-								projects' development deliverables and timelines.</li>
-							<li class="list-item">Implemented custom WordPress boilerplate to from which we began all WordPress
-								projects.</li>
-							<li class="list-item">Built WordPress plugins to connect with APIs like HubSpot, Google Maps, and
-								Dribbble.</li>
-							<li class="list-item">Extensive work with PHP, HTML, SCSS, Javascript, Twig, and Gulp.</li>
-							<li class="list-item">All sites responsive and cross-browser compatible.</li>
+							<li class="list-item">Improved our cost-efficiency by planning sprint/task lists for the WordPress development team.</li>
+							<li class="list-item">Provided expertise and led other developers (both in-house and external) on WordPress projects.</li>
+							<li class="list-item">Enhanced scope of work and build specification documents to clarify development deliverables and timelines.</li>
+							<li class="list-item">Revamped project start time by implementing custom WordPress boilerplate for all projects.</li>
+							<li class="list-item">Constructed WordPress plugins to make CMS more efficient with APIs like HubSpot, Google Maps, and Dribbble.</li>
 						</ul>
 
 						<p class="list-title">
@@ -258,28 +257,18 @@
 							<em>(2016 - 2018)</em>
 						</p>
 						<ul class="list list--experience">
-							<li class="list-item">Planned/created WordPress sites, as a solo developer and as a team, from wireframes
-								to
-								development.</li>
-							<li class="list-item">Communicated directly with clients to provide expertise on site functionality and
-								content management.</li>
-							<li class="list-item">Created an extendible module system to build WordPress templates.</li>
-							<li class="list-item">Extensive work with PHP, HTML, SCSS, Javascript, Twig, and Gulp.</li>
-							<li class="list-item">All sites responsive and cross-browser compatible.</li>
-							<li class="list-item">Worked with clients to plan redesigns of their websites.</li>
-							<li class="list-item">Used modern pagespeed methods to optimize websites for high performance scores on
-								Google
-								Lighthouse audits.</li>
-							<li class="list-item">Collaborated with SEO and Paid Media teams to plan websites that are highly visible
-								to
-								search engines.</li>
+							<li class="list-item">Created wireframe documents to plan WordPress site structure and improve overall efficiency.</li>
+							<li class="list-item">Communicated directly with clients to provide expertise on site functionality and content management.</li>
+							<li class="list-item">Created an extendible module system to build WordPress templates to shorten project timelines.</li>
+							<li class="list-item">Optimized websites with high performance pagespeed methods for higher user reach.</li>
+							<li class="list-item">Collaborated with SEO team to improve website search rankings and reduce ad costs for clients.</li>
 						</ul>
 
-						<p class="list-title">
+						<p>
 							<strong>SPARK Experience, Senior Web Developer</strong>
 							<em>(2012 - 2016)</em>
 						</p>
-						<ul class="list list--experience">
+						<!-- <ul class="list list--experience">
 							<li class="list-item">Planned/created WordPress sites with a team of developers.</li>
 							<li class="list-item">Worked directly with clients to identify needs/goals and plan solutions.</li>
 							<li class="list-item">Used modular workflow to accelerate development process.</li>
@@ -288,9 +277,12 @@
 							<li class="list-item">All sites responsive and cross-browser compatible.</li>
 							<li class="list-item">Managed and maintained projects with Git and Grunt/Gulp.</li>
 							<li class="list-item">Planned projects alongside UX research, content, and design teams.</li>
-						</ul>
+						</ul> -->
 
-						<p><strong>pro2go Designs, Co-Founder</strong> <em>(2009 - 2012)</em></p>
+						<p>
+							<strong>pro2go Designs, Co-Founder</strong>
+							<em>(2009 - 2012)</em>
+						</p>
 						<!-- <ul class="list">
 							<li class="list-item">Met with clients for project milestone updates.</li>
 							<li class="list-item">Created websites with WordPress API or a custom PHP/mySQL CMS.</li>
@@ -303,6 +295,33 @@
 						<p><strong>UCF SDES Webmaster</strong> <em>(2009)</em></p>
 						<p><strong>Time and Gems Webmaster</strong> <em>(2008 - 2009)</em></p>
 						<p><strong>Project Spot Designer</strong> <em>(2007 - 2008)</em></p>
+
+					</section>
+
+					<section id="fun-projects" class="resume-section">
+						<h2 class="resume-heading">Fun Projects</h2>
+
+						<ul class="list list--recent">
+
+							<li class="list-item">
+								<strong><a href="https://triviabot5000.com/" rel="nofollow noopener">TriviaBot 5000</a></strong>,
+								<em>(2024)</em>
+								<p>A fun little project to make something entertaining with OpenAI. This website makes use of Wikipedia's API, OpenAI's API, and React! A new trivia question is generated every day via OpenAI, based on Wikipedia's Topic of the Day from one year ago.</p>
+							</li>
+
+							<li class="list-item">
+								<strong><a href="https://old-screensavers-react.netlify.app/" rel="nofollow noopener">Old Screensavers</a></strong>,
+								<em>(2024)</em>
+								<p>Just a neat demo of Windows 3.11 screensavers, built in React. Uses basic form elements to updates values used by the app to generate the stars/windows and control their speed.</p>
+							</li>
+
+							<li class="list-item">
+								<strong><a href="http://htmlpreview.github.io/?https://github.com/sparkjames/star-fox/blob/master/star-fox.html" rel="nofollow noopener">Starfox in CSS</a></strong>,
+								<em>(2016)</em>
+								<p>A short scene built entirely with CSS, made to look like the old Super Nintendo game, Starfox. I used stretched out &lt;div&gt; shapes to look like polygons and everything else is pixel art using the CSS drop shadow trick. I like to see how far CSS can be pushed.</p>
+							</li>
+
+						</ul>
 
 					</section>
 
@@ -408,6 +427,11 @@
 						</ul>
 					</section>
 
+					<section id="education" class="resume-section">
+						<h2 class="resume-heading">Education</h2>
+						<p>Bachelor of Digital Media &mdash; Interactive Systems, 2009<br>
+							University of Central Florida</p>
+					</section>
 
 				</main>
 
