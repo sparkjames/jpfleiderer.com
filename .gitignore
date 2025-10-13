@@ -5,6 +5,7 @@
 node_modules
 .sass-cache
 .parcel-cache
+package-lock.json
 
 # Locally stored files
 images/uncompressed

@@ -15,11 +15,11 @@
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
-    "@parcel/resolver-glob": "^2.4.1",
-    "@parcel/transformer-sass": "^2.4.1",
-    "parcel": "^2.4.0",
-    "parcel-resolver-ignore": "^2.0.0",
-    "sass": "^1.49.11"
+    "@parcel/resolver-glob": "^2.16.0",
+    "@parcel/transformer-sass": "^2.16.0",
+    "parcel": "^2.16.0",
+    "parcel-resolver-ignore": "^2.2.0",
+    "sass": "^1.93.2"
   },
   "targets": {
     "default": {
