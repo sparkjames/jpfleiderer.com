@@ -202,24 +202,39 @@
 						<h2 class="resume-heading">Experience</h2>
 
 						<p class="list-title">
+							<strong>Nightwing, Full Stack Web Developer</strong>
+							<em>(May 2025 - Sept 2025, Four-month contract)</em>
+						</p>
+						<ul class="list list--experience">
+							<li class="list-item">Decrease time for employees to find HR information and resources with new intranet website, converting SharePoint to WordPress.</li>
+							<li class="list-item">Improved overall content editing UX with custom Gutenberg blocks built with PHP and React.</li>
+							<li class="list-item">Create custom WordPress REST APIs for easier and more secure content retrieval.</li>
+							<li class="list-item">Revamped users' ability to find resources with new chatbot built on React and custom OpenAI APIs.</li>
+							<li class="list-item">Utilized custom CI/CD processes to deploy company websites to LEMP servers on Azure and AWS Lightsail.</li>
+							<li class="list-item">Decreased technical debt by writing documentation for development and editor processes.</li>
+							<li class="list-item">Provide expertise to Digital Experience team as Lead WordPress Developer to keep Agile timelines on track.</li>
+						</ul>
+
+						<p class="list-title">
 							<strong>NASA, Senior Web Developer</strong>
-							<em>(2024-2025)</em>
+							<em>(Oct 2024 - Mar 2025, Full-time)</em>
 						</p>
 						<ul class="list list--experience">
 							<li class="list-item">Increased operational efficiency by consolidating dozens of different NASA orgs' websites under nasa.gov.</li>
-							<li class="list-item">Integrated search.gov to increase availability of NASA content.</li>
-							<li class="list-item">Increased engagement and functionality with new content blocks like image comparisons and forms, built in React.</li>
-							<li class="list-item">Documented plugin and theme component processes to
-								enhance internal developer resources.</li>
+							<li class="list-item">Integrated search.gov to increase availability of NASA content for all users.</li>
+							<li class="list-item">Increased engagement and functionality with new content blocks like image comparisons and forms built in React and PHP.</li>
+							<li class="list-item">Performed routine QA to audit pull requests to approve for CI/CD pipeline deployment in secure NASA GitHub and WPVIP cloud environment, reducing chance for deployment errors.</li>
+							<li class="list-item">Documented plugin and theme component processes to enhance internal developer resources.</li>
+							<li class="list-item">Received Public Trust Clearance via NASA MSFC (Marshall Space Flight Center, Huntsville, AL)</li>
 						</ul>
 
 						<p class="list-title">
 							<strong>nclud, Senior Full-stack Developer</strong>
-							<em>(2023-2024)</em>
+							<em>(May 2023 - Feb 2024, Full-time)</em>
 						</p>
 						<ul class="list list--experience">
-							<li class="list-item">Automated deployment processes using GitHub Actions to reduce time and errors.</li>
-							<li class="list-item">Developed custom Gutenberg blocks to improve end-user’s ability to edit website content.</li>
+							<li class="list-item">• Dramatically reduced time and errors with automated deployment processes using GitHub Actions to deploy to LEMP environments on AWS Lightsail.</li>
+							<li class="list-item">Developed custom Gutenberg blocks to improve end-user's ability to edit website content.</li>
 							<li class="list-item">Worked directly with clients to manage work requests and review project progress.</li>
 							<li class="list-item">Added full multi-language features (i18n) for clients to reach multiple markets and increase business.</li>
 							<li class="list-item">Planned and managed tasks for myself and other developers.</li>
@@ -228,7 +243,7 @@
 
 						<p class="list-title">
 							<strong>Edelman, Senior WordPress Developer</strong>
-							<em>(2021 - 2022)</em>
+							<em>(Feb 2021 - Nov 2022, Full-time)</em>
 						</p>
 						<ul class="list list--experience">
 							<li class="list-item">Streamlined project timelines by planning features, architecture, and scope in build specification documents.</li>
@@ -242,7 +257,7 @@
 
 						<p class="list-title">
 							<strong>Taoti Creative, Lead WordPress Developer</strong>
-							<em>(2018 - 2021)</em>
+							<em>(Aug 2018 - Feb 2021, Full-time)</em>
 						</p>
 						<ul class="list list--experience">
 							<li class="list-item">Improved our cost-efficiency by planning sprint/task lists for the WordPress development team.</li>
@@ -254,7 +269,7 @@
 
 						<p class="list-title">
 							<strong>Knucklepuck, Senior Web Developer</strong>
-							<em>(2016 - 2018)</em>
+							<em>(Jul 2016 - Jun 2018, Full-time)</em>
 						</p>
 						<ul class="list list--experience">
 							<li class="list-item">Created wireframe documents to plan WordPress site structure and improve overall efficiency.</li>
@@ -266,7 +281,7 @@
 
 						<p>
 							<strong>SPARK Experience, Senior Web Developer</strong>
-							<em>(2012 - 2016)</em>
+							<em>(Aug 2012 - May 2016, Full-time)</em>
 						</p>
 						<!-- <ul class="list list--experience">
 							<li class="list-item">Planned/created WordPress sites with a team of developers.</li>
@@ -281,7 +296,7 @@
 
 						<p>
 							<strong>pro2go Designs, Co-Founder</strong>
-							<em>(2009 - 2012)</em>
+							<em>(2009 - 2012, Full-time)</em>
 						</p>
 						<!-- <ul class="list">
 							<li class="list-item">Met with clients for project milestone updates.</li>
@@ -329,6 +344,12 @@
 						<h2 class="resume-heading">Recent Websites</h2>
 
 						<ul class="list list--recent">
+
+							<li class="list-item">
+								<strong><a href="https://lexfitness.com/" rel="nofollow noopener">LexFitness</a></strong>,
+								<em>(2025)</em>
+								<p>A local gym in Lexington, KY, needed to update their website to switch to the standard Gutenberg Block editor rather than relying on Elementor. The website uses a custom hybrid theme to allow block-editing on pages/posts and keep standard WordPress PHP template files. There are a few custom blocks built with React, like trainer bios and an image slider.</p>
+							</li>
 
 							<li class="list-item">
 								<strong><a href="https://www.spendhq.com/" rel="nofollow noopener">SpendHQ</a></strong>,
